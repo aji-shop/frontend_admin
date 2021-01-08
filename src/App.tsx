@@ -67,10 +67,10 @@ export default function App() {
               <ProductView token={token}/>
             </Route>
             <Route path="/unorder">
-              <UnorderView />
+              <UnorderView token={token} />
             </Route>
             <Route path="/order">
-              <OrderView />
+              <OrderView token={token} />
             </Route>
 
           </div>

@@ -28,7 +28,7 @@ export default function ProductView(props: ProductViewProps) {
         if(mounted) {
 
             getProducts()
-
+            
             Category.getAll().then(res => {
                 setCategories(
                     res.data.reduce((acc: any, cur: ICategory) => {
